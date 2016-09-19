@@ -33,7 +33,9 @@ body {
 		outline: none;
 	}
 }
-
+.video, form {
+	will-change: transform;
+}
 .has-success,
 .has-error {
 	.form-control {

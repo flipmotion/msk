@@ -5,4 +5,11 @@
 	color: #fff;
 	font-weight: 300;
 	padding: 20px 0 10px;
+	a {
+		color: #fff;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }

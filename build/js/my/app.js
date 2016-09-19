@@ -1,6 +1,22 @@
 
 $(document).ready(function() {
-
+	$('.video, form, .content.bg_1 .btn-primary').css({
+			'transform': 'translateY('+ window.pageYOffset / 15 +'px)',
+			'-moz-transform': 'translateY('+ window.pageYOffset / 15 +'px)',
+			'-ms-transform': 'translateY('+ window.pageYOffset / 15 +'px)',
+			'-webkit-transform': 'translateY('+ window.pageYOffset / 15 +'px)',
+			'-o-transform': 'translateY('+ window.pageYOffset / 15 +'px)'
+		});
+	$(window).on('scroll', function(e){
+		$('.video, form, .content.bg_1 .btn-primary').css({
+			'transform': 'translateY('+ window.pageYOffset / 15 +'px)',
+			'-moz-transform': 'translateY('+ window.pageYOffset / 15 +'px)',
+			'-ms-transform': 'translateY('+ window.pageYOffset / 15 +'px)',
+			'-webkit-transform': 'translateY('+ window.pageYOffset / 15 +'px)',
+			'-o-transform': 'translateY('+ window.pageYOffset / 15 +'px)'
+		});
+	});
+	$('.video');
 	$('.smooth').click(function(){
 		$('html, body').animate({
 			scrollTop: $( $.attr(this, 'href') ).offset().top
@@ -76,6 +92,6 @@ $(document).ready(function() {
 	};
 	Form.initialize();
 	// Does the browser actually support the video element?
-	
+
 });
 

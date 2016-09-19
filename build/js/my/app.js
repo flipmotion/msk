@@ -1,5 +1,6 @@
 
 $(document).ready(function() {
+
 	$('.smooth').click(function(){
 		$('html, body').animate({
 			scrollTop: $( $.attr(this, 'href') ).offset().top
@@ -74,5 +75,7 @@ $(document).ready(function() {
 		}
 	};
 	Form.initialize();
+	// Does the browser actually support the video element?
+	
 });
 
